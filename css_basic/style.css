@@ -1,0 +1,7 @@
+.text{
+    background-color: cornflowerblue;
+    border: 5px black solid;
+    padding: 3px,3px,3px,3px;
+    height: 100px;
+    text-align: center;
+}

@@ -11,7 +11,7 @@ body{
     height: 30px;
     display: flex;
     justify-content: center;
-    border-radius: 60px;
+    border-radius: 15px;
 }
 
 #img{
@@ -21,4 +21,9 @@ body{
 
 .go{
     position: relative;
+}
+.video{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
 }

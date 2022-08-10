@@ -1,7 +1,33 @@
-.text{
+/* .text{
     background-color: cornflowerblue;
     border: 5px black solid;
     padding: 3px,3px,3px,3px;
     height: 100px;
     text-align: center;
+} */
+#txt{
+    display: block;
+    background-color: cornflowerblue;
+    border: 5px black solid;
+    padding: 3px,3px,3px,3px;
+    height: 100px;
+    text-align: center;
+}
+a:link{
+    color: crimson;
+}
+a:visited{
+    color:chartreuse;
+}
+a:hover{
+    color: chocolate;
+}
+#txt:hover{
+    background-color:darkgray;
+    color:darkblue;
+}
+.youtube{
+    display: inline-block;
+    border-width: 3px;
+    border-color: gold;
 }

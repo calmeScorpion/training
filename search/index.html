@@ -5,27 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
     <title>Search</title>
   </head>
   <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="./video.mp4" type="video/mp4" />
+    </video>
     <div class="title_name">
       <h1>SEARCH</h1>
     </div>
     <div class="search_bar">
-      <form action="https://www.google.com/search">
-        <input type="text" placeholder="search here" name="q" />
+      <form action="https://www.google.com/search" class="search_area">
+        <input id="name" type="text" placeholder=" search here" name="q" />
         <button class="go">
           <img
             id="img"
-            src="https://cdn.icon-icons.com/icons2/2066/PNG/128/search_icon_125165.png"
+            src="https://www.iconpacks.net/icons/2/free-arrow-next-icon-2825-thumb.png"
           />
         </button>
       </form>
     </div>
-    <div class="video">
+    <div class="shortcut">
+      <a href="https://mail.google.com/" target="_blank"
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png"
+      /></a>
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img
+          src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-clipart-download-best-facebook-logo-0.png"
+      /></a>
+      <a href="https://www.youtube.com/" target="_blank"
+        ><img
+          src="https://icons-for-free.com/download-icon-logo+media+social+square+video+youtube+icon-1320192913003765080_512.png"
+      /></a>
+    </div>
+    <!-- <div class="video">
       <video width="500px" controls autoplay>
         <source src="./video.mp4" />
       </video>
-    </div>
+    </div> -->
   </body>
 </html>

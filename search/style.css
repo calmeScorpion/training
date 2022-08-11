@@ -1,29 +1,71 @@
 body{
-    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+    background-image: url("https://i.pinimg.com/originals/ec/9e/b7/ec9eb7d878c45d52bb3988b2fc8af95e.jpg");
+    background-size: cover;
 }
 .title_name{
-    text-align: center;
+    margin-left: 390px;
+    margin-top: 100px;
     font-size: large;
+    font-family: 'Creepster', cursive;
     padding-top: 100px;
-    color: cornflowerblue;
+    color: rgb(255, 255, 255);
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index:-1;;
+    min-width: 100%;
+    min-height: 100%;
+  }
+#name{
+    height: 30px;
+    width: 200px;
+    border-radius: 30px;
+    background: transparent;
+    flex: 1;
+    border-style: none;
+}
+#name:focus{
+    outline: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 .search_bar{
-    height: 30px;
+    height: 70px;
     display: flex;
     justify-content: center;
-    border-radius: 15px;
 }
-
+.search_area{
+    width:100%;
+    max-width:500px;
+    background:rgba(255, 255, 255, 0.603);
+    display:flex;
+    align-items:center;
+    border-radius:60px;
+    padding:10px 20px;
+}
 #img{
-    height: 10px;
-    width: 10px;
+    height: 40px;
 }
 
 .go{
     position: relative;
+    border:0;
+    border-radius:50%;
+    width:60px;
+    height:60px;
+    background:transparent;
+    cursor:pointer;
 }
-.video{
-    margin-top: 60px;
+.shortcut img{
+    height: 50px;
+    width: 60px;
+    margin: 10px;
+}
+.shortcut{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    margin-top: 150px;
 }

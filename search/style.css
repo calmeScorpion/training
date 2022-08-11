@@ -1,12 +1,11 @@
 body{
-    background-image: url("https://i.pinimg.com/originals/ec/9e/b7/ec9eb7d878c45d52bb3988b2fc8af95e.jpg");
     background-size: cover;
 }
 .title_name{
     margin-left: 390px;
     margin-top: 100px;
     font-size: large;
-    font-family: 'Creepster', cursive;
+    font-family: 'Lemon', cursive;
     padding-top: 100px;
     color: rgb(255, 255, 255);
 }

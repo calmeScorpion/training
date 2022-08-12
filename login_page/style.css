@@ -1,34 +1,36 @@
-body{
+body {
+    background-color: aquamarine;
     background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/47/79/VOwWvI.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     margin: 150px 100px 100px 100px;
-    padding:0px;
+    padding: 0px;
 }
-#inputs{
+
+#inputs {
     align-items: center;
     box-sizing: border-box;
     border-radius: 20px;
     border-width: 5px;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-.login{
+
+.login {
     width: 500px;
-    background:white; 
+    background: white;
     border-radius: 10px;
     width: 600px;
     height: 350px;
     display: flex;
     flex-direction: row;
 }
-.pic{
+
+.pic {
     height: 100px;
     width: 100px;
-}
-.data{
-    
 }

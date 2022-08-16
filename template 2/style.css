@@ -1,10 +1,6 @@
 body{
-<<<<<<< HEAD
     margin:0vh;
     padding:0vh;
-=======
-    
->>>>>>> 1fd378325b1db2d9032dae7898fbd4e9f6f2497f
 }
 .background_img1{
     background-color: rgba(20, 7, 7, 255);
@@ -24,7 +20,6 @@ body{
 .links{
     margin-top: 0vh;
     margin-left: 20vh;
-<<<<<<< HEAD
     word-spacing: 1vh;
 }
 h1{
@@ -34,28 +29,13 @@ h1{
 }
 h{
     color: #ff4000;
-=======
-    word-spacing: 3vh;
-}
-h1{
-    color: white;
-    margin-left: 15vh;
-    font-size: 10;
-}
-h{
-    color: red;
->>>>>>> 1fd378325b1db2d9032dae7898fbd4e9f6f2497f
     margin-left: -0.6vh;
     letter-spacing: normal;
 }
 .links a{
     text-decoration: none;
     color: white;
-<<<<<<< HEAD
     font-size: 1.5vh;
-=======
-    font-size: small;
->>>>>>> 1fd378325b1db2d9032dae7898fbd4e9f6f2497f
     margin-left: 5vh;
     transition: 0.5s;
 }
@@ -80,7 +60,6 @@ h{
 .menu_option{
     margin-left: 3vh;
     margin-right: 1vh;
-<<<<<<< HEAD
     cursor: pointer;
 }
 .text1{
@@ -106,23 +85,6 @@ h3{
     height: 5vh;
     border: none;
     cursor: pointer;
-=======
-}
-.text1{
-    margin-left: 30vh;
-    font-size: 3vh;
-    font-family: sans-serif;
-}
-h3{
-    color: white;
-    font-size: 20px;
-}
-.but_getstarted{
-    background-color: red;
-    color: white;
-    border-radius: 3vh;
-    height: 2vh;
->>>>>>> 1fd378325b1db2d9032dae7898fbd4e9f6f2497f
 }
 .background2{
     margin-top: 23vh;
@@ -132,7 +94,6 @@ h3{
 }
 .text2 {
     color: black;
-<<<<<<< HEAD
     margin-left: 8vh;
     margin-top: -10vh;
 }
@@ -143,21 +104,10 @@ h3{
 .picture img{
     margin-left: 48vh;
     height: 60vh;
-=======
-    margin-left: 4vh;
-}
-.picture{
-    display: inline-block;
-}
-.picture img{
-    margin-left: 30vh;
-    margin-top:15vh;
->>>>>>> 1fd378325b1db2d9032dae7898fbd4e9f6f2497f
 }
 .background3{
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     align-items: center;
     background-color: rgb(247,247,247);
 }
@@ -295,15 +245,4 @@ h3{
 .back7_part1{
     display: flex;
     flex-direction: row;
-=======
-    margin-left: 60vh;
-    background-color: rgb(240, 238, 235);
-}
-h4{
-    margin-left: 40vh;
-}
-.background3 p{
-    margin-left: 30vh;
-    align-items: center;
->>>>>>> 1fd378325b1db2d9032dae7898fbd4e9f6f2497f
 }

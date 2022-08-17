@@ -239,10 +239,85 @@ h3{
 .background7 img{
     margin-top: 5%;
     margin-left: 15%;
-    height: 40vh;
-    width: 90vh;
+    height: 35vh;
+    width: 80vh;
 }
 .back7_part1{
     display: flex;
     flex-direction: row;
+    margin-left: 15%;
+    background-color: white;
+}
+.text6{
+    margin-left: 10%;
+}
+.text6 h4{
+    font-size: 200%;
+}
+.text6 p{
+    font-size: 125%;
+}
+.but_read{
+    margin-top: 10%;
+    margin-left: 20%;
+    background-color: #ff4000;
+    color: white;
+    border-radius: 3vh;
+    height: 5vh;
+    width: 20vh;
+    border: none;
+    cursor: pointer;
+}
+.back7_part2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    background-color: white;
+}
+.background8{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+.tags{
+    height: 5%;
+    width: 10%;
+    padding-left: 15%;
+}
+.background9{
+    background-color: #343434;
+    display: flex;
+}
+.back9_part1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+.back9_part1 h1{
+    margin-left: 0%;
+    font-size: 250%;
+}
+.text7 p{
+    color: #898989;
+    margin-top: 0%;
+    font-size: 125%;
+}
+.text7 a{
+    color: #898989;
+    text-decoration: none;
+}
+.back9_part2{
+    margin-top:2%;
+    margin-left: 10%;
+}
+.back9_part2 a{
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+}
+#links{
+    color: white;
+    font-size: 125%;
 }

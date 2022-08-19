@@ -18,7 +18,6 @@ body{
     justify-content:space-between;
 }
 .links{
-    margin-top: 0vh;
     margin-left: 20vh;
     word-spacing: 1vh;
 }
@@ -87,7 +86,7 @@ h3{
     cursor: pointer;
 }
 .background2{
-    margin-top: 23vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -95,11 +94,15 @@ h3{
 .text2 {
     color: black;
     margin-left: 8vh;
-    margin-top: -10vh;
+}
+.text2 h4{
+    font-size: 5vh;
+}
+.text2 p{
+    font-size: 2vh;
 }
 .picture{
     display: inline-block;
-    margin-top:-10vh;
 }
 .picture img{
     margin-left: 48vh;
@@ -124,6 +127,7 @@ h3{
 }
 .text3 p{
     text-align: center;
+    font-size: 125%;
 }
 .text2 p{
     align-items: center;
@@ -208,6 +212,16 @@ h3{
     margin-right: 38vh;
 }  
 .new_pro a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 2vh;
+    padding: 1vh;
+    padding-bottom: 2vh;
+}
+#new a{
+    margin-top: 1vh;
+    display: inline-block;
     text-decoration: none;
     color: black;
     font-size: 2vh;
@@ -215,8 +229,9 @@ h3{
     padding-bottom: 2vh;
 }
 .new_pro img{
-    height: 2vh;
-    width: 4vh;
+    height: 3vh;
+    width:5vh;
+    padding: 1.5vh 0vh 0vh 1vh;
 }
 .background6{
     margin-top: 20vh;
@@ -298,12 +313,12 @@ h3{
 }
 .back9_part1 h1{
     margin-left: 0%;
-    font-size: 250%;
+    font-size: 100%;
 }
 .text7 p{
     color: #898989;
     margin-top: 0%;
-    font-size: 125%;
+    font-size: 75%;
 }
 .text7 a{
     color: #898989;
@@ -320,41 +335,42 @@ h3{
     text-decoration: none;
     line-height: 2;
 }
-#links{
-    color: white;
-    font-size: 125%;
-}
 .link{
     margin-top: 20%;
     margin-left: 40%;
+    font-size: 50%;
 }
 .link_col{
     color: white;
+    font-size: 50%;
+    margin-bottom: 3vh;
 }
 .newsletter{
     margin-top: 2%;
-    margin-left: 10%;
-}.search_bar{
-    height: 70px;
+    margin-left: 12%;
+}
+.search_bar{
+    height: 5vh;
+    width: 10vh;
+    margin-right: 1vh;
     display: flex;
     justify-content: center;
 }
 .search_area{
-    width:100%;
-    max-width:500px;
+    margin-left: 16vh;
+    width:22vh;
     background:white;
     display:flex;
     align-items:center;
-    border-radius:60px;
-    padding:10px 20px;
+    border-radius:20vh;
+    padding:4px 10px;
 }
 #img{
-    height: 102%;
+    height: 100%;
 }
-
 .but_search{
     position: relative;
-    border:0;
+    border:none;
     border-radius:50%;
     width: 28%;
     height: 140%;

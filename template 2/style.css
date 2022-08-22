@@ -20,10 +20,10 @@ body{
 .links{
     margin-left: 15%;
 }
-h1{
+.top_bar h1{
     color: white;
     margin-left: 23%;
-    width: 6.3%;
+    width: 6.6%;
 }
 #O{
     color: rgb(187, 39, 2);;
@@ -141,6 +141,7 @@ h3{
 }
 .text4 h1{
     margin-left: 0vh;
+    color: white;
 }
 .text4 p{
     color: white;
@@ -240,56 +241,66 @@ h3{
     flex-direction: column;
     justify-content: center;
 }
-.background7 img{
+.background7 img {
     margin-top: 5%;
-    margin-left: 15%;
-    height: 35vh;
-    width: 80vh;
+    height: 60%;
+    width: 100%;
+}
+.back7_img{
+    width: 30%;
+    height: 100%;
+    margin-right: 5%;
+}
+.back7_img1{
+    width: 30%;
+    height: 100%;
+    margin-left: 5%;
 }
 .back7_part1{
     display: flex;
     flex-direction: row;
-    margin-left: 15%;
+    justify-content: center;
     background-color: white;
 }
-.text6{
-    margin-left: 10%;
-}
 .text6 h4{
-    font-size: 200%;
+    font-size: 100%;
+    text-align: center;
 }
 .text6 p{
-    font-size: 125%;
+    font-size: 50%;
+    text-align: center;
 }
 .but_read{
     margin-top: 10%;
-    margin-left: 20%;
-    background-color: rgb(187, 39, 2);;
+    background-color: rgb(187, 39, 2);
+    text-align: center;
+    padding: 5% 10% 5% 10%;
     color: white;
+    margin-left: 15%;
     border-radius: 3vh;
-    height: 5vh;
-    width: 20vh;
     border: none;
     cursor: pointer;
 }
 .back7_part2{
     display: flex;
     flex-direction: row;
-    margin-left: 15%;
+    justify-content: center;
     background-color: white;
 }
-.background8{
+.background8 {
     display: flex;
     flex-direction: row;
-    margin-top: 10%;
-    width: 80%;
-    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+    margin-bottom: 3%;
 }
 .tags{
+    display: flex;
+    justify-content: center;
     height: 5%;
     width: 10%;
-    padding-left: 5%;
-    margin-left: 10%;
 }
 .background9{
     background-color: #262627;

@@ -1,6 +1,7 @@
 body{
-    margin:0vh;
-    padding:0vh;
+    margin:0%;
+    padding:0%;
+    font-family: 'Raleway', sans-serif;
 }
 .background_img1{
     background-color: rgba(20, 7, 7, 255);
@@ -8,82 +9,73 @@ body{
     background-position-x: right;
     background-repeat: no-repeat;
     height: 99vh;
+    opacity: 0.95;
 }
 .top_bar{
     width:90%;
-    margin-left: 15vh;
-    margin-right: 0vh;
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
 .links{
-    margin-left: 20vh;
-    word-spacing: 1vh;
+    margin-left: 15%;
 }
 h1{
     color: white;
-    margin-left: 25vh;
-    font-size: 10;
+    margin-left: 23%;
+    width: 6.3%;
 }
-h{
-    color: #ff4000;
-    margin-left: -0.6vh;
+#O{
+    color: rgb(187, 39, 2);;
     letter-spacing: normal;
+    font-size: 200%;
+    font-weight: bold;
 }
 .links a{
     text-decoration: none;
     color: white;
-    font-size: 1.5vh;
-    margin-left: 5vh;
-    transition: 0.5s;
+    font-size: 55%;
+    margin-left: 2%;
+    transition: 0.75s;
 }
 .links a:hover{
-    text-decoration: underline 3px #ff4000;
+    text-decoration: underline 3px rgb(187, 39, 2);;
 }
 #search_img{
-    width: 15px;
-}
-.search_button{
-    background:transparent;
-    border: none;
+    width: 1.2%;
 }
 #menu_img{
-    width: 15px;
-}
-.menu_button{
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-.menu_option{
-    margin-left: 3vh;
-    margin-right: 1vh;
-    cursor: pointer;
+    width: 90%;
 }
 .text1{
     display: inline-block;
-    margin-top: 20vh;
-    margin-left: 15vh;
-    font-family: sans-serif;
+    margin-top: 13%;
+    margin-left: 21%;
+    
 }
-.text1 h1{
-    margin-left: 25vh;
-    font-size:8vh;
+.text1 h0{
+    margin: 0% 0% 0% 0%;
+    color: white;
+    font-size :300%;
+}
+.text1 h{
+    color: rgb(187, 39, 2);;
+}
+.text1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 70%;
+}
+.getstarted{
+    width: 40%;
+    background-color: rgb(187, 39, 2);
+    text-align: center;
+    padding: 2% 0%;
+    border-radius: 3vh;
 }
 h3{
     color: white;
     font-size: 2vh;
-    margin-left: 25vh;
-}
-.but_getstarted{
-    background-color: #ff4000;
-    color: white;
-    margin-left: 25vh;
-    border-radius: 3vh;
-    height: 5vh;
-    border: none;
-    cursor: pointer;
 }
 .background2{
     margin-top: 10vh;
@@ -119,21 +111,18 @@ h3{
     width: 65%;
 }
 .background3 h4{
-    font-size: 5vh;
-    text-align: center;
-}
-.text3 h4{
+    font-size: 150%;
     text-align: center;
 }
 .text3 p{
     text-align: center;
-    font-size: 125%;
+    font-size: 70%;
 }
 .text2 p{
     align-items: center;
 }
 .but_learn{
-    background-color: #ff4000;
+    background-color:rgb(187, 39, 2);;
     color: white;
     border-radius: 3vh;
     height: 5vh;
@@ -142,7 +131,7 @@ h3{
     cursor: pointer;
 }
 .background4{
-    background-color: #ff4000;
+    background-color:rgb(187, 39, 2);;
     background-image: linear-gradient(to right, #ff0000, #ff8000);
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -158,7 +147,7 @@ h3{
 }
 .but_try{
     background-color:white;
-    color: #ff4000;
+    color: rgb(187, 39, 2);;
     border-radius: 3vh;
     height: 5vh;
     border: none;
@@ -198,7 +187,7 @@ h3{
     font-size: 2vh;
 }
 #but_explore{
-    background-color:#ff4000;
+    background-color:rgb(187, 39, 2);;
     color: white;
     border-radius: 3vh;
     height: 5vh;
@@ -275,7 +264,7 @@ h3{
 .but_read{
     margin-top: 10%;
     margin-left: 20%;
-    background-color: #ff4000;
+    background-color: rgb(187, 39, 2);;
     color: white;
     border-radius: 3vh;
     height: 5vh;
@@ -314,6 +303,7 @@ h3{
 .back9_part1 h1{
     margin-left: 0%;
     font-size: 100%;
+    color: white;
 }
 .text7 p{
     color: #898989;

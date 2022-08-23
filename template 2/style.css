@@ -25,7 +25,7 @@ body{
     margin-left: 23%;
     width: 6.6%;
 }
-#O{
+.O{
     color: rgb(187, 39, 2);;
     letter-spacing: normal;
     font-size: 200%;
@@ -300,11 +300,14 @@ h3{
     display: flex;
     justify-content: center;
     height: 5%;
-    width: 10%;
+    width: 7%;
+    padding: 0% 2% 0% 2%;
 }
 .background9{
-    background-color: #262627;
+    background-color: #333333;
     display: flex;
+    padding-bottom: 3%;
+    padding-top: 2%;
 }
 .back9_part1{
     display: flex;
@@ -326,7 +329,7 @@ h3{
     text-decoration: none;
 }
 .back9_part2{
-    margin-top:2%;
+    margin-top:1%;
     margin-left: 10%;
     display: flex;
     flex-direction: row;
@@ -366,27 +369,34 @@ h3{
     border-radius:20vh;
     padding:4px 10px;
 }
-#img{
-    height: 100%;
+#arrow1{
+    height: 5vh;
+    margin-top: 8%;
+    border-radius: 30%;
+    width: 7vh;
 }
-.but_search{
-    position: relative;
-    border:none;
-    border-radius:50%;
-    width: 28%;
-    height: 140%;
-    cursor:pointer;
-}
-#name{
-    height: 30px;
-    width: 200px;
-    border-radius: 30px;
+#name {
+    height: 45%;
+    width: 17vh;
     background: transparent;
-    flex: 1;
     border-style: none;
+    padding: 0% 0% 0% 0%;
 }
 #name:focus{
     outline: none;
+}
+.o{
+    color: rgb(187, 39, 2);;
+    letter-spacing: normal;
+    font-size: 100%;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+}
+.background10{
+    background-color:rgb(34, 34, 34);
+    display: flex;
+    align-items: baseline;
+}
+.social{
+    margin-left: 20%;
+    width: 40%;
 }

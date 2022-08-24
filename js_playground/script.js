@@ -10,4 +10,4 @@ if (c % 2 == 0) {
 }
 for (let i = 0; i < c; i++) {
   console.log(i);
-}
+} 

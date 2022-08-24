@@ -1,13 +1,7 @@
-console.log('hello world!');
-let a = 'hi';
-let b = 'world';
-let c = 10;
-console.log(a + ' ' + b);
-if (c % 2 == 0) {
-  console.log(c + ' is an even number');
-} else {
-  console.log('not an even number');
+console.log('CALCULATE!');
+function addition() {
+  let num1 = parseInt(document.getElementById('num1').value);
+  let num2 = parseInt(document.getElementById('num2').value);
+  let sum = (num1 + num2);
+  alert("Sum = " +sum);
 }
-for (let i = 0; i < c; i++) {
-  console.log(i);
-} 

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background: url("/images/aboutus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(5, 5, 5);
+}
+.aboutheading{
+    width: 10%;
+    margin-left: 4%;
+    margin-top: 3%;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.aboutus{
+    margin-left: 4%;
+    margin-top: 4%;
+    word-spacing: 3px;
+    padding-bottom: 2%;
+    font-size: 24px;
+}
+p{
+    margin-left: 4%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: lightblue;
+    height: 100vh;
+    background-image: url(/images/bg1.jpg);
+    
+}
+/* common classes */
+
+.navcolor{
+    color: white;
+}
+/* cart section */
+
+.nav{
+    width: 13%;
+    height: 10vh;
+    margin-left: 47%;
+    margin-top: 3%;
+}
+
+.fa-cart-shopping{
+    font-size: 35px;
+
+}
+.Cart_Head{
+    font-size: 30px;
+}
+
+/* card body */
+
+.Cart_Container{
+    width: 70%;
+    height: 85%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-left: 15%;
+    
+}
+.Cart_Header{
+        margin: auto;
+        width: 90%;
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+}
+.Cart_Heading{
+    font-size: 20px;
+
+}
+.Cart_Action{
+    font-size: 16px;
+    border-style: none;
+    outline: none;
+    border-radius: 5%;
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    height: 30px;
+}
+
+/* Added Items */
+
+.Cart_Items{
+   
+    height: 80px;
+    background-color: rgb(199, 146, 76);
+   }
+/* add quantity */
+
+.Cart_Counter{
+    
+    height: 80px;
+    background-color: wheat;
+}
+
+.Cart_Remove{
+    width: 10%;
+    height: 25px;
+    outline: none;
+    border-style: none;
+    background-color: antiquewhite;
+    
+}
+
+/* Cart_Checkout */
+
+.To_Checkout_Button{
+    width: 15%;
+    height: 6vh;
+    margin-top: 3%;
+    margin-left: 40%;
+    background-color: whitesmoke;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-style: italic;
+    border-style: none;
+    border-radius: 15%;
+}
+.fa-lock{
+    font-size: 25px;
+    padding-left: 3%;
+}
+

@@ -1,0 +1,87 @@
+body{
+    margin: 0%
+}
+/* styles for first page */
+
+.firstPageContainer{
+    margin: 0%;
+    height: 100vh;
+    background-image: url(/images/43966988-online-shopping-e-commerce-concept-background.webp);
+    opacity: 0.5%;
+}
+
+.firstPageheader{
+    height: 25vh;
+}
+
+.btn{
+    margin-left: 18%;
+    font-size: 62px;
+}
+
+.firstPageSearch{
+    margin-left: 5%;
+    width: 40%;
+    height: 5vh;
+    border-radius: 20px;
+}
+.firstPageBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstPageButton{
+    width: 8%;
+    height: 50%;
+    background:#32a889;
+    border: solid #ad1111;
+    border-radius:10px;
+    border: none;
+    margin-left: 1.5%;
+    margin-top: 4%;
+}
+
+i{
+    margin-left: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.firstPageNavigation{
+    height: 10vh;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+.home{
+    color: black;
+    margin-left: 5%;
+    text-decoration: auto;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.firstPageBody{
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 20%;
+}
+
+.firstPageBodyButton{
+    width: 75%;
+    height: 18%;
+    margin-left: 67%;
+    margin-top: 25%;
+    background-color:#32a889;
+    border: solid #32a889;
+    border-radius: 16px;
+    font-size: 18px;
+    font-style: oblique;
+
+}

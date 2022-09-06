@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+
+    <script
+      src="https://kit.fontawesome.com/9508d2f776.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- cart section -->
+    <div class="nav navcolor">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="Cart_Head">My Cart</span>
+    </div>
+
+    <!-- cart body -->
+    <div class="Cart_Container">
+      <div class="Cart_Header">
+        <h3 class="Cart_Heading">Added Items</h3>
+        <a href="#">
+          <button type="button" class="Cart_Action">Remove all</button>
+        </a>
+      </div>
+
+      <!-- Added Items -->
+
+      <div class="Cart_Items"></div>
+
+      <!-- add Quantity -->
+      <div class="Cart_Counter"></div>
+      <a href="#">
+        <button type="button" class="Cart_Remove">Remove</button>
+      </a>
+    </div>
+
+    <!-- Cart_Checkout -->
+    <a href="checkout.html">
+      <button type="button" class="To_Checkout_Button" onclick="">
+        Checkout<i class="fa-solid fa-lock"></i>
+      </button>
+    </a>
+    <script src="cart.js"></script>
+  </body>
+</html>

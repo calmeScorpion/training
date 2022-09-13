@@ -1,0 +1,100 @@
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+    zoom: 75%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .form{
+    margin: auto;
+  }
+  h2 {
+    font-size: 40px;
+    background: linear-gradient(to left, #660066 0%, #ff3300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    font-size: 30px;
+  }
+  .row {
+    display: flex;
+  }
+  .col-25 {
+    
+    flex: 25%;
+  }
+  .col-50 {
+    
+    flex: 50%;
+  }
+  .col-75 {
+    
+    flex: 75%;
+  }
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  input[type='text'] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  input[type='password'] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  input[type='date']{
+    border: 1px solid gray;
+    border-radius: 4px;
+  }
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .options{
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  .btn {
+    background: linear-gradient(to left, #99ccff 0%, #003399 100%);
+    color: black;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .btn:hover {
+    background: linear-gradient(to left, #003399 0%, #99ccff 100%);
+  }
+  a {
+    color: #2196f3;
+  }
+  hr {
+    border: 1px solid lightgrey;
+  }

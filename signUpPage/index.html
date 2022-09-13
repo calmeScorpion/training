@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration Page</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h2>Register</h2>
+    <div class="row">
+      <form id="signup" class="form">
+        <div class="col-75">
+          <div class="container">
+            <form action="">
+              <div class="row">
+                <div class="col-50">
+                  <h3>Details</h3>
+                  <label for="fname"
+                    ><i class="fa fa-user"></i> Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Enter your name"
+                  />
+                  <label for="email"
+                    ><i class="email"></i> Email</label
+                  >
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                  />
+                  <label for="adr"
+                    ><i class="fa fa-address-card-o"></i> Address</label
+                  >
+                  <input
+                    type="text"
+                    id="adr"
+                    name="address"
+                    placeholder="Address line 1"
+                  />
+                  <label for="city"
+                    ><i class="fa fa-institution"></i> City</label
+                  >
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="enter your city"
+                  />
+
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        placeholder="Enter your state"
+                      />
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input
+                        type="text"
+                        id="zip"
+                        name="zip"
+                        placeholder="pincode here"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-50">
+                  <label for="cname">Password</label>
+                  <input
+                    type="password"
+                    id="cname"
+                    name="cardname"
+                    placeholder="Enter a password"
+                  />
+                  <label for="cname">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="cname"
+                    name="cardname"
+                    placeholder="confirm your password"
+                  />
+                  <label for="ccnum">Mobile Number</label>
+                  <input
+                    type="text"
+                    id="ccnum"
+                    name="cardnumber"
+                    placeholder="mobile number here"
+                  />
+                  <label for="expmonth">Date Of Birth</label>
+                  <input type="date" id="expmonth" name="expmonth" />
+                  <div class="row">
+                    <div class="col-50">
+                      <label >Gender</label>
+                      <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="male"
+                      />
+                      <label for="male" class="options">Male</label>
+                      <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                      />
+                      <label for="male" class="options">Female</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="status" class="options">Marital Status:</label>
+                      <select name="marital" id="status">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr" />
+                Agree to the Terms and Conditions
+              </label>
+              <input type="submit" value="Register" class="btn" />
+            </form>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

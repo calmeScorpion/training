@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 800px;
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.textHeader{
+    margin-top: 30px;
+}
+.textarea{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.branch{
+    margin-top: 20px;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+.form-field.error text {
+    border-color: var(--error-color);
+}
+
+.form-field.success text {
+    border-color: var(--success-color);
+}
+
+.form-field small {
+    color: var(--error-color);
+}
+small{
+    color: red;
+}
+.color{
+    color:black;
+}
+.button{
+    width:200px;
+    height:30px;
+    background-color: #28a745;
+}
+.input{
+    width:300px;
+    height: 30px;
+    margin-left: 20px;
+}
+#checkboxInput1{
+    margin-left: 30px;
+}

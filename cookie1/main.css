@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+body,p {
+    margin: 0;
+}
+body {
+    
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.container >h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #9f8e8e;
+    text-align: center;
+}
+.card_wrapper {
+    display: flex;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img_wrapper {
+    width: 300px;
+    display: inline-block;
+}
+.img_wrapper img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card .content {
+    padding: 2px 16px;
+  }
+  

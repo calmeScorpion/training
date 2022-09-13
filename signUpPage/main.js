@@ -1,5 +1,5 @@
 var myForm = document.querySelector('#signup');
-var userNameField = document.querySelector('#username');
+var userNameField = document.querySelector('#fname');
 var textarea = document.querySelector('.textarea');
 var select = document.getElementById('select');
 var radiobutton = document.querySelector('input[name="gender"]');

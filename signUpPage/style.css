@@ -29,7 +29,7 @@ body {
     flex: 25%;
   }
   .col-50 {
-    
+    margin-bottom: 20px;
     flex: 50%;
   }
   .col-75 {
@@ -62,8 +62,7 @@ body {
     border-radius: 3px;
   }
   input[type='date']{
-    border: 1px solid gray;
-    border-radius: 4px;
+    margin-bottom: 20px;
   }
   label {
     margin-bottom: 10px;
@@ -71,7 +70,7 @@ body {
   }
   .options{
     margin-bottom: 10px;
-    display: flex;
+    display: inline;
   }
   .icon-container {
     margin-bottom: 20px;

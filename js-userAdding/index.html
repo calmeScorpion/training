@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <button class="add-user" onclick="addUserModal()">Add User</button>
+
+      <!-- MODAL FOR ADD USER -->
+      <div class="modal-addUser" id="modal-addUser">
+        <div class="modal-content">
+          <span class="close" onclick="clearUserModal()">&times;</span>
+          <form action="" id="form">
+            <input
+              type="text"
+              id="nameInput"
+              name="nameInput"
+              placeholder="Enter the name here..."
+            />
+            <small id="nameError"></small>
+            <button id="add-btn" type="submit" value=" Add ">Add</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- MODAL FOR DELETE USER -->
+      <div class="modal-deleteUser">
+        <div class="modal-content">
+          <span class="close" onclick="clearDeleteModa()">&times;</span>
+          <p class="sure">Are you sure ?</p>
+          <button
+            id="delete-btn"
+            type="submit"
+            onclick="deleteCookie()"
+          >
+            Yes
+          </button>
+          <button id="cancel-btn" type="submit" onclick="clearDeleteModa()">
+            No
+          </button>
+        </div>
+      </div>
+
+      <!-- DISPLAY THE USERS -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Slno</th>
+              <th>Name</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

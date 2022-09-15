@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web_page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button id="add_but" class="button">Add User</button>
+    <div class="modal">
+      <div class="modal_header">
+        <h2>Register here</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal_body">
+        <form id="myform" class="input_area">
+          <div class="form-control">
+            <label for="Name">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name here"
+              class="input_field"
+              id="name"
+            />
+            <small></small><br />
+          </div>
+          <div class="form-control">
+            <label for="age">Age</label>
+            <input
+              type="text"
+              placeholder="Enter your age here"
+              class="input_field"
+              id="age"
+            />
+            <small></small><br />
+          </div>
+          <div class="form-control">
+            <label for="image">Image</label>
+            <input type="text" id="image" />
+            <small></small><br />
+          </div>
+          <div class="form-control">
+            <label for="designation">designation</label>
+            <input
+              type="text"
+              placeholder="Enter your designation here"
+              class="input_field"
+              id="designation"
+            />
+            <small></small><br />
+          </div>
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </div>
+    </div>
+    <table class="table1">
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>designation</th>
+        <th>action</th>
+      </tr>
+    </table>
+    <script src="./main.js"></script>
+  </body>
+</html>

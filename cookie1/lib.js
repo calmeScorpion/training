@@ -203,3 +203,100 @@ var other = {
     });
   },
 };
+
+//veena
+function createCookie() {
+  var empName = document.getElementById('ename');
+  var empAge = document.getElementById('eage');
+  var empImage = document.getElementById('eimage');
+  var empDest = document.getElementById('edest');
+
+  today = new Date();
+  var expire = new Date();
+  expire.setTime(today.getTime() + 3600000  24  15);
+
+  let user = {
+    empname: empName.value,
+    empage: empAge.value,
+    empimage: empImage.value,
+    empdest: empDest.value,
+  };
+  let history = getCookie();
+  let foundData = false;
+  if (history) {
+    for (let i = 0; i < history.length; i++) {
+      let res = objectsAreSame(history[i], user);
+      if (res) {
+        foundData = true;
+      }
+    }
+    if (foundData) {
+      alert('data already exists');
+    } else {
+      let newHistory = [history, user];
+      document.cookie =
+        'user=' +
+        JSON.stringify(newHistory) +
+        ';path=/' +
+        ';expires=' +
+        expire.toUTCString();
+    }
+  } else {
+    document.cookie =
+      'user=' +
+      JSON.stringify([user]) +
+      ';path=/' +
+      ';expires=' +
+      expire.toUTCString();
+  }
+}
+
+function getCookie() {
+  let name = 'user';
+  var result = document.cookie.match(new RegExp(name + '=([^;]+)'));
+  result && (result = JSON.parse(result[1]));
+
+  return result;
+}
+function objectsAreSame(x, y) {
+  var objectsAreSame = true;
+  for (var empName in x) {
+    if (x[empName] !== y[empName]) {
+      objectsAreSame = false;
+      break;
+    }
+  }
+  return objectsAreSame;
+}
+//sreelakshmi
+
+var other = {
+  //adding data to cookie
+  addProduct() {
+    var formfield = this.getProducts();
+    formfield.push(this.getElementObject());
+    cookieFunctions.setCookie('formfield', JSON.stringify(formfield), 8);
+  },
+  getElementObject() {
+    console.log(other.getProducts);
+    return {
+      name: username.value,
+      age: age.value,
+      image: image.value,
+      destination: destination.value,
+    };
+  },
+  getProducts() {
+    var productCookies = cookieFunctions.getCookie('formfield');
+    return JSON.parse(productCookies);
+  },
+  //initial cookie creation
+  initialize() {
+    var isCookieExists = cookieFunctions.checkCookieExists('formfield');
+    if (!isCookieExists) {
+      var formfield = [];
+      cookieFunctions.setCookie('formfield', JSON.stringify(formfield), 8);
+    }
+    return this.getProducts();
+  },
+};

@@ -1,9 +1,15 @@
 var myForm = document.querySelector('#signup');
 var userNameField = document.querySelector('#fname');
-var textarea = document.querySelector('.textarea');
+var address = document.querySelector('#adr');
 var select = document.getElementById('select');
 var radiobutton = document.querySelector('input[name="gender"]');
-var dateInput = document.getElementById('dateInput');
+var dateInput = document.querySelector('#date');
+var city = document.querySelector('#city');
+var state = document.querySelector('#state');
+var pin = document.querySelector('#pin');
+var pass = document.querySelector('#pass');
+var cpass = document.querySelector('#cpass');
+var mobile = document.querySelector('#mnum');
 
 myForm.addEventListener('submit', function (e) {
   var isFormValid = false;
@@ -15,6 +21,12 @@ myForm.addEventListener('submit', function (e) {
   // Handle username validation
   var userNameFieldValue = userNameField.value.trim();
   if (userNameFieldValue.length === 0) {
+  } else {
+    isUserNameValid = true;
+    showUsernameRequiredError = false;
+  }
+  if (isNaN(userNameField)) {
+    error('username cannot be a number');
   } else {
     isUserNameValid = true;
     showUsernameRequiredError = false;

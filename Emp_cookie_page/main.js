@@ -16,7 +16,6 @@ window.addEventListener('click', function outsideClick(e) {
   }
 });
 
-// Form validation
 var username = document.getElementById('name');
 var age = document.getElementById('age');
 var image = document.getElementById('image');
@@ -31,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
   var userrr = user.initialize();
   console.log('user', userrr);
 });
+
+// Form validation
 function checkInputs() {
   var usernameValue = username.value.trim();
   var ageValue = age.value.trim();
@@ -54,6 +55,11 @@ function checkInputs() {
   } else {
     setSuccessFor(age);
   }
+  if (image === '') {
+    setErrorFor(image, 'It cannot be empty');
+  } else {
+    setSuccessFor(image);
+  }
   if (designationValue === '') {
     setErrorFor(designation, 'It cannot be empty');
   } else if (!isNaN(designationValue)) {
@@ -76,10 +82,6 @@ function setSuccessFor(input) {
   var small = formControl.querySelector('small');
   small.innerText = '';
 }
-console.log('username=', username.value);
-console.log('age=', age.value);
-console.log('image=', image.value);
-console.log('designation=', designation.value);
 
 // cookie
 
@@ -144,3 +146,25 @@ var user = {
     return this.getUsers();
   },
 };
+
+window.onload = () => {
+  var display_feilds = document.getElementById('tdata');
+  let edata = JSON.parse(cookieFunctions.getCookie('formfield'));
+
+  let data = '';
+
+  if (edata.length > 0) {
+    edata.forEach((element) => {
+      console.log(element);
+      data += `<tr><td>${element.name}</td> <td>${element.age}</td> <td><img src="${element.image}" width="20px" height="20px"></td> <td>${element.designation}</td><td><button id="edit_btn" onclick="edit()">Edit</button>
+      </td></tr>`;
+      console.log(data);
+    });
+    display_feilds.innerHTML = data;
+  }
+};
+
+function edit() {
+  var modal = document.querySelector('.modal');
+  modal.style.display = 'block';
+}

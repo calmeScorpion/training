@@ -38,7 +38,7 @@
           </div>
           <div class="form-control">
             <label for="image">Image</label>
-            <input type="text" id="image" />
+            <input type="text" placeholder="Enter Image link here" id="image" />
             <small></small><br />
           </div>
           <div class="form-control">
@@ -57,12 +57,15 @@
     </div>
     <table class="table1">
       <tr>
-        <th>Image</th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>designation</th>
-        <th>action</th>
+        <thead>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Image</th>
+          <th>designation</th>
+          <th>action</th>
+        </thead>
       </tr>
+      <tbody class="table_data" id="tdata"></tbody>
     </table>
     <script src="./main.js"></script>
   </body>

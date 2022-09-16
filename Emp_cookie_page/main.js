@@ -156,7 +156,7 @@ window.onload = () => {
   if (edata.length > 0) {
     edata.forEach((element) => {
       console.log(element);
-      data += `<tr><td>${element.name}</td> <td>${element.age}</td> <td><img src="${element.image}" width="20px" height="20px"></td> <td>${element.designation}</td><td><button id="edit_btn" onclick="edit()">Edit</button>
+      data += `<tr><td>${element.name}</td> <td>${element.age}</td> <td><img src="${element.image}" width="20px" height="20px"></td> <td>${element.designation}</td><td><button id="edit_btn" onclick="edit('${element.name}')">Edit</button>
       </td></tr>`;
       console.log(data);
     });
@@ -164,7 +164,59 @@ window.onload = () => {
   }
 };
 
-function edit() {
+function edit(editValue) {
   var modal = document.querySelector('.modal');
   modal.style.display = 'block';
+  document.querySelector('.button').style.visibility = 'hidden';
+  var ecookie = JSON.parse(cookieFunctions.getCookie('formfield'));
+
+  var dfilter = ecookie.filter((data) => data.name == editValue);
+  console.log(dfilter);
+
+  document.getElementById('name').value = dfilter[0].name;
+  document.getElementById('age').value = dfilter[0].age;
+  document.getElementById('image').value = dfilter[0].image;
+  document.getElementById('designation').value = dfilter[0].designation;
+
+  document.getElementById('name').readOnly = 'true';
+
+  var emodal = document.querySelector('.modal');
+  document.getElementById('heading').innerHTML = 'Update Details';
+  var ubtn = document.createElement('BUTTON');
+  ubtn.innerHTML = 'Update';
+  var ebtn = emodal.appendChild(ubtn);
+
+  ebtn.addEventListener('submit', function () {
+    e.preventDefault();
+    user.updateData();
+    if (checkInputs()) {
+      updateData();
+    }
+  });
+}
+
+function updateData() {
+  var newdata = JSON.parse(cookieFunctions.getCookie('formfield'));
+  var newName = document.getElementById('name').value;
+  var newAge = document.getElementById('age').value;
+  var newImage = document.getElementById('image').value;
+  var newDesignation = document.getElementById('designation').value;
+
+  let user = {
+    name: newName,
+    age: newAge,
+    image: newImage,
+    designation: newDesignation,
+  };
+  let index = newdata.findIndex((data) => data.empname == newName);
+  newdata.splice(index, 1, user);
+  console.log('the updated data:- ', newdata);
+  document.cookie =
+    'user=' +
+    JSON.stringify(newdata) +
+    ';path=/' +
+    ';expires=' +
+    expire.toUTCString();
+
+  window.location.reload();
 }

@@ -24,12 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const min = e.getAttribute('min');
       const max = e.getAttribute('max');
       const checked = event.target.checked;
-      // console.log({
-      //   value,
-      //   ismulti,
-      //   filtertype,
-      //   checked: event.target.checked,
-      // });
+
       let filtersCookie = getFiltersCookie();
 
       // Check if cookie already present
@@ -41,8 +36,24 @@ document.addEventListener('DOMContentLoaded', () => {
             value,
           });
         } else {
+          const elems = document.querySelectorAll(
+            `[data-filtertype="${filtertype}"]`
+          );
           filtersCookie.push({
             price: pricefilter,
+            value,
+          });
+          elems.forEach((el) => {
+            const v = el.getAttribute('value');
+            if (v !== value) {
+              el.checked = false;
+            }
+          });
+          filtersCookie = filtersCookie.filter(
+            ({ type }) => type !== filtertype
+          );
+          filtersCookie.push({
+            type: filtertype,
             value,
           });
         }
@@ -63,17 +74,49 @@ document.addEventListener('DOMContentLoaded', () => {
 const loadProducts = () => {
   let productIds = Object.keys(products);
   let mergedproductIds = productIds;
-  let priceId = productIds;
   const listingWrapper = document.querySelector('.products');
   listingWrapper.innerHTML = '';
 
   let filtersCookie = getFiltersCookie();
   if (filtersCookie.length) {
     const filteredProductIds = filtersCookie.map((a) => {
-      return productIds.filter((b) => products[b].type === a.value);
+      if (a.type === 'price') {
+        var pricevalue = a.value;
+        var low = pricevalue.split('-')[0];
+        var high = pricevalue.split('-')[1];
+        return {
+          type: 'price',
+          productIds: productIds.filter((p) => {
+            var productPrice = products[p].price;
+            if (
+              productPrice > low &&
+              (high === '*' ? true : productPrice <= high)
+            ) {
+              return true;
+            }
+            return false;
+          }),
+        };
+      }
+      return {
+        type: a.type,
+        productIds: productIds.filter((b) => products[b].type === a.value),
+      };
+      // return productIds.filter((b) => products[b].type === a.value);
     });
-
-    mergedproductIds = [].concat.apply([], filteredProductIds);
+    var groupByType = groupBy(filteredProductIds, 'type');
+    console.log('filteredProductIds');
+    const formattedResponse = Object.keys(groupByType).map((a) => {
+      return [].concat.apply(
+        [],
+        groupByType[a].map(({ productIds }) => productIds)
+      );
+    });
+    console.log('formattedResponse', formattedResponse);
+    mergedproductIds = formattedResponse.reduce((a, b) =>
+      a.filter((c) => b.includes(c))
+    );
+    // mergedproductIds = [].concat.apply([], filteredProductIds);
   }
   mergedproductIds.forEach(function (a) {
     var elecObj = products[a];
@@ -98,12 +141,19 @@ const loadProducts = () => {
     div1.appendChild(pName);
 
     var prc = document.createElement('p');
-    prc.classList.add('Price');
+    prc.classList.add('price');
     prc.setAttribute('id', 'price');
     prc.innerHTML = elecObj.price;
     div1.appendChild(prc);
     listingWrapper.appendChild(div1);
   });
+};
+
+const groupBy = (xs, key) => {
+  return xs.reduce(function (rv, x) {
+    (rv[x[key]] = rv[x[key]] || []).push(x);
+    return rv;
+  }, {});
 };
 
 const initCookie = () => {

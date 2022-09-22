@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+display:flex;
+flex-direction: row;
+}
+ /* style for filter and product container  */
+.filters, .products {
+    display: flex;
+    flex-direction: column;
+    border:  1px black thin;
+
+}
+
+.filters {
+    width: 25%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+}
+
+.filters h3{
+    text-align: center;
+    margin-top: 5%;
+}
+.categories, .price {
+    margin: 2% 10%;
+}
+.categories p, .price p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+
+input[type="range"] {
+    width:70%
+  }
+
+.products {
+    width: 75%;
+    margin-left: 25%;
+}
+#header {
+    align-items: center;
+    margin-top: 2%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 2% 5%;
+    justify-content: space-between;
+
+}
+
+/* design for individual boxes  */
+.box {
+    /* background-color: antiquewhite; */
+    width: 30%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    
+
+}
+
+.box:Hover {
+    transform: scale(1.05);
+}
+ 
+.img_wrapper {
+    width: 100%;
+    height: 50%;
+    /* background-color: yellow; */
+}
+
+
+.img_wrapper .img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+
+.box .pname {
+    font-size: 16px;
+    color: #022d53;
+    font-weight: 600;
+    margin-top: 4%;
+    
+}
+
+.Price {
+    font-size: 18px;
+    margin-top: 4%;
+    color: green;
+}

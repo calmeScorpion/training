@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Display</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <!-- code for filter container  -->
+      <div class="filters" id="filters">
+        <h3 class="filter_head">Filters</h3>
+        <div class="categories" id="categories">
+          <p id="c_head">Categories</p>
+          <input type="checkbox" id="mobile" name="mobiles" value="mobiles" />
+          <label for="mobile"> Mobiles</label><br />
+          <input type="checkbox" id="laptop" name="laptop" value="laptops" />
+          <label for="laptop"> Laptops</label><br />
+          <input type="checkbox" id="tv" name="tv" value="tvs" />
+          <label for="tv"> Televisions</label><br /><br />
+        </div>
+        <div class="price" id="price">
+          <p id="p_head">Price</p>
+          <input type="range" id="price_bar" />
+        </div>
+      </div>
+    </div>
+    <script src="./common.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

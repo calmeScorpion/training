@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/Main_css/Ecommerce.css" />
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <h1>Product List</h1>
+    <div class="main">
+      <div class="filters">
+        <h2>Category</h2>
+        <input type="checkbox" name="Category" id="Mobile" value="Mobile" />
+        <label for="Mobile">Mobile</label><br />
+        <input type="checkbox" name="Category" id="Camera" value="Camera" />
+        <label for="Camera">Camera</label><br />
+        <input type="checkbox" name="Category" id="Laptop" value="Laptop" />
+        <label for="Laptop">Laptop</label><br /><br />
+        <h2>Price</h2>
+        <input type="radio" name="Price" id="0to20" />
+        <label for="0to20"> 0 - 20</label><br />
+        <input type="radio" name="Price" id="20to40" />
+        <label for="">20 - 40</label><br />
+        <input type="radio" name="Price" id="40above" />
+        <label for="">40 Above</label><br />
+      </div>
+      <div>
+        <div class="filter_container">
+          <script src="/script/filter.js"></script>
+        </div>
+        <div class="container">
+          <script src="/script/main.js"></script>
+          <script src="/script/listitem.js"></script>
+          <script src="/script/filter.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

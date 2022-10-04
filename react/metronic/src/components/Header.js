@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 const Header = () => {
   return (
@@ -15,8 +15,8 @@ const Header = () => {
             className="btn btn-icon btn-custom w-30px h-30px w-md-40px h-md-40px"
             id="kt_activities_toggle"
           >
-            <i class="<	fa fa-bar-chart"></i>
-            <i class="far fa-object-ungroup"></i>
+            <i className="<	fa fa-bar-chart"></i>
+            <i className="far fa-object-ungroup"></i>
           </div>
           <div
             className="btn btn-icon btn-custom w-30px h-30px w-md-40px h-md-40px position-relative"
@@ -24,7 +24,7 @@ const Header = () => {
             data-kt-menu-attach="parent"
             data-kt-menu-placement="bottom-end"
           >
-            <span className="svg-icon svg-icon-1">
+            {/* <span className="svg-icon svg-icon-1">
               <svg
                 width="24"
                 height="24"
@@ -51,7 +51,7 @@ const Header = () => {
                   fill="currentColor"
                 ></path>
               </svg>
-            </span>
+            </span> */}
           </div>
           <i className="bi bi-bar-chart"></i>
           <i className="bi bi-envelope"></i>

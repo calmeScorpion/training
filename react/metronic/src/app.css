@@ -8,6 +8,20 @@
 .headerinner{
     width: 40%;
 }
-.topbar{
+.dashboard{
+    width:95%;
     background-color: white;
+    margin: auto;
+}
+.topbar{
+    display: flex;
+}
+.buttons{
+    float:right;
+}
+.components{
+    justify-content: center;
+}
+.cards{
+    width: 90%;
 }

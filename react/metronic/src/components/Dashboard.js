@@ -1,14 +1,22 @@
-import React from "react";
-import Card from "./Card";
+import React from 'react';
+import Card from './Card';
 
-const Dashboard =()=>{
-    return (
-        <div className="topbar">
-            Dashboard
-            <div className="components">
-                <Card/>
-            </div>
+const Dashboard = () => {
+  return (
+    <div className='dashboard'>
+      <div className="topbar">
+        <p>Dashboard | #XRS-45670</p>
+        <div className="buttons ">
+          <button>Today: Oct3</button>
+          <button>Filters</button>
+          <button>Create</button>
         </div>
-    )
-}
-export default Dashboard
+      </div>
+      <div className="components">
+        <Card />
+      </div>
+    </div>
+  );
+};
+
+export default Dashboard;
